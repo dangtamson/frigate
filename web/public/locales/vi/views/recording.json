@@ -1,1 +1,12 @@
-{}
+{
+  "export": "Xuất",
+  "calendar": "Lịch",
+  "filter": "Bộ lọc",
+  "filters": "Các bộ lọc",
+  "toast": {
+    "error": {
+      "noValidTimeSelected": "Không có khoảng thời gian hợp lệ được chọn",
+      "endTimeMustAfterStartTime": "Thời gian kết thúc phải sau thời gian bắt đầu"
+    }
+  }
+}

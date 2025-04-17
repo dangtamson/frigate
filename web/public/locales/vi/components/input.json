@@ -1,1 +1,10 @@
-{}
+{
+  "button": {
+    "downloadVideo": {
+      "label": "Tải Video",
+      "toast": {
+        "success": "Video của bạn đã bắt đầu tải xuống."
+      }
+    }
+  }
+}

@@ -1,1 +1,125 @@
-{}
+{
+  "filter": "Bộ lọc",
+  "labels": {
+    "label": "Nhãn",
+    "all": {
+      "title": "Tất cả nhãn",
+      "short": "Nhãn"
+    },
+    "count_one": "{{count}} Nhãn",
+    "count_other": "{{count}} Nhãn"
+  },
+  "zones": {
+    "label": "Khu vực",
+    "all": {
+      "title": "Tất cả khu vực",
+      "short": "Khu vực"
+    }
+  },
+  "dates": {
+    "all": {
+      "title": "Tất cả ngày",
+      "short": "Ngày"
+    }
+  },
+  "more": "Thêm bộ lọc",
+  "reset": {
+    "label": "Đặt lại bộ lọc về giá trị mặc định"
+  },
+  "timeRange": "Khoảng thời gian",
+  "subLabels": {
+    "label": "Nhãn phụ",
+    "all": "Tất cả nhãn phụ"
+  },
+  "score": "Điểm số",
+  "estimatedSpeed": "Tốc độ ước tính ({{unit}})",
+  "features": {
+    "label": "Tính năng",
+    "hasSnapshot": "Có ảnh chụp",
+    "hasVideoClip": "Có đoạn video",
+    "submittedToFrigatePlus": {
+      "label": "Đã gửi đến Frigate+",
+      "tips": "Bạn phải lọc trước các đối tượng được theo dõi có ảnh chụp.<br /><br />Các đối tượng được theo dõi không có ảnh chụp không thể được gửi đến Frigate+."
+    }
+  },
+  "sort": {
+    "label": "Sắp xếp",
+    "dateAsc": "Ngày (Tăng dần)",
+    "dateDesc": "Ngày (Giảm dần)",
+    "scoreAsc": "Điểm đối tượng (Tăng dần)",
+    "scoreDesc": "Điểm đối tượng (Giảm dần)",
+    "speedAsc": "Tốc độ ước tính (Tăng dần)",
+    "speedDesc": "Tốc độ ước tính (Giảm dần)",
+    "relevance": "Độ liên quan"
+  },
+  "cameras": {
+    "label": "Bộ lọc camera",
+    "all": {
+      "title": "Tất cả camera",
+      "short": "Camera"
+    }
+  },
+  "review": {
+    "showReviewed": "Hiển thị đã xem xét"
+  },
+  "motion": {
+    "showMotionOnly": "Chỉ hiển thị chuyển động"
+  },
+  "explore": {
+    "settings": {
+      "title": "Cài đặt",
+      "defaultView": {
+        "title": "Chế độ xem mặc định",
+        "desc": "Khi không có bộ lọc nào được chọn, hiển thị tóm tắt các đối tượng được theo dõi gần đây nhất theo nhãn, hoặc hiển thị lưới không lọc.",
+        "summary": "Tóm tắt",
+        "unfilteredGrid": "Lưới không lọc"
+      },
+      "gridColumns": {
+        "title": "Cột lưới",
+        "desc": "Chọn số lượng cột trong chế độ xem lưới."
+      },
+      "searchSource": {
+        "label": "Nguồn tìm kiếm",
+        "desc": "Chọn tìm kiếm hình thu nhỏ hoặc mô tả của các đối tượng được theo dõi.",
+        "options": {
+          "thumbnailImage": "Hình thu nhỏ",
+          "description": "Mô tả"
+        }
+      }
+    },
+    "date": {
+      "selectDateBy": {
+        "label": "Chọn một ngày để lọc"
+      }
+    }
+  },
+  "logSettings": {
+    "label": "Lọc mức nhật ký",
+    "filterBySeverity": "Lọc nhật ký theo mức độ nghiêm trọng",
+    "loading": {
+      "title": "Đang tải",
+      "desc": "Khi ngăn nhật ký được cuộn xuống dưới cùng, các nhật ký mới sẽ tự động phát trực tiếp khi được thêm vào."
+    },
+    "disableLogStreaming": "Tắt phát trực tiếp nhật ký",
+    "allLogs": "Tất cả nhật ký"
+  },
+  "trackedObjectDelete": {
+    "title": "Xác nhận xóa",
+    "desc": "Xóa các đối tượng được theo dõi {{objectLength}} này sẽ xóa ảnh chụp, bất kỳ nhúng nào đã lưu và bất kỳ mục nhập vòng đời đối tượng liên quan nào. Đoạn phim đã ghi của các đối tượng được theo dõi này trong chế độ xem Lịch sử sẽ <em>KHÔNG</em> bị xóa.<br /><br />Bạn có chắc chắn muốn tiếp tục không?<br /><br />Giữ phím <em>Shift</em> để bỏ qua hộp thoại này trong tương lai.",
+    "toast": {
+      "success": "Đã xóa các đối tượng được theo dõi thành công.",
+      "error": "Không thể xóa các đối tượng được theo dõi: {{errorMessage}}"
+    }
+  },
+  "zoneMask": {
+    "filterBy": "Lọc theo mặt nạ khu vực"
+  },
+  "recognizedLicensePlates": {
+    "title": "Biển số xe được nhận diện",
+    "loadFailed": "Không thể tải biển số xe được nhận diện.",
+    "loading": "Đang tải biển số xe được nhận diện...",
+    "placeholder": "Nhập để tìm kiếm biển số xe...",
+    "noLicensePlatesFound": "Không tìm thấy biển số xe.",
+    "selectPlatesFromList": "Chọn một hoặc nhiều biển số từ danh sách."
+  }
+}

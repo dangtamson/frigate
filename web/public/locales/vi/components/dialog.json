@@ -1,1 +1,113 @@
-{}
+{
+  "restart": {
+    "title": "Bạn có chắc chắn muốn khởi động lại Frigate không?",
+    "button": "Khởi động lại",
+    "restarting": {
+      "title": "Frigate đang khởi động lại",
+      "content": "Trang này sẽ tải lại sau {{countdown}} giây.",
+      "button": "Tải lại ngay bây giờ"
+    }
+  },
+  "explore": {
+    "plus": {
+      "submitToPlus": {
+        "label": "Gửi đến Frigate+",
+        "desc": "Các đối tượng ở những vị trí bạn muốn tránh không phải là kết quả sai. Gửi chúng như kết quả sai sẽ làm mô hình bị nhầm lẫn."
+      },
+      "review": {
+        "true": {
+          "label": "Xác nhận nhãn này cho Frigate Plus",
+          "true_one": "Đây là {{label}}",
+          "true_other": "Đây là một {{label}}"
+        },
+        "false": {
+          "label": "Không xác nhận nhãn này cho Frigate Plus",
+          "false_one": "Đây không phải là {{label}}",
+          "false_other": "Đây không phải là một {{label}}"
+        },
+        "state": {
+          "submitted": "Đã gửi"
+        }
+      }
+    },
+    "video": {
+      "viewInHistory": "Xem trong lịch sử"
+    }
+  },
+  "export": {
+    "time": {
+      "fromTimeline": "Chọn từ dòng thời gian",
+      "lastHour_one": "Giờ trước",
+      "lastHour_other": "{{count}} giờ trước",
+      "custom": "Tùy chỉnh",
+      "start": {
+        "title": "Thời gian bắt đầu",
+        "label": "Chọn thời gian bắt đầu"
+      },
+      "end": {
+        "title": "Thời gian kết thúc",
+        "label": "Chọn thời gian kết thúc"
+      }
+    },
+    "name": {
+      "placeholder": "Đặt tên cho xuất dữ liệu"
+    },
+    "select": "Chọn",
+    "export": "Xuất",
+    "selectOrExport": "Chọn hoặc Xuất",
+    "toast": {
+      "success": "Bắt đầu xuất dữ liệu thành công. Xem tệp trong thư mục /exports.",
+      "error": {
+        "failed": "Không thể bắt đầu xuất dữ liệu: {{error}}",
+        "endTimeMustAfterStartTime": "Thời gian kết thúc phải sau thời gian bắt đầu",
+        "noVaildTimeSelected": "Không có khoảng thời gian hợp lệ được chọn"
+      }
+    },
+    "fromTimeline": {
+      "saveExport": "Lưu xuất dữ liệu",
+      "previewExport": "Xem trước xuất dữ liệu"
+    }
+  },
+  "streaming": {
+    "label": "Phát trực tiếp",
+    "restreaming": {
+      "disabled": "Phát lại không được bật cho camera này.",
+      "desc": {
+        "title": "Cài đặt go2rtc để có thêm tùy chọn xem trực tiếp và âm thanh cho camera này.",
+        "readTheDocumentation": "Đọc tài liệu"
+      }
+    },
+    "showStats": {
+      "label": "Hiển thị thống kê luồng",
+      "desc": "Bật tùy chọn này để hiển thị thống kê luồng dưới dạng lớp phủ trên nguồn cấp dữ liệu camera."
+    },
+    "debugView": "Chế độ gỡ lỗi"
+  },
+  "search": {
+    "saveSearch": {
+      "label": "Lưu tìm kiếm",
+      "desc": "Cung cấp tên cho tìm kiếm đã lưu này.",
+      "placeholder": "Nhập tên cho tìm kiếm của bạn",
+      "overwrite": "{{searchName}} đã tồn tại. Lưu sẽ ghi đè giá trị hiện có.",
+      "success": "Tìm kiếm ({{searchName}}) đã được lưu.",
+      "button": {
+        "save": {
+          "label": "Lưu tìm kiếm này"
+        }
+      }
+    }
+  },
+  "recording": {
+    "confirmDelete": {
+      "title": "Xác nhận xóa",
+      "desc": {
+        "selected": "Bạn có chắc chắn muốn xóa tất cả video đã ghi liên quan đến mục đánh giá này không?<br /><br />Giữ phím <em>Shift</em> để bỏ qua hộp thoại này trong tương lai."
+      }
+    },
+    "button": {
+      "export": "Xuất",
+      "markAsReviewed": "Đánh dấu là đã xem xét",
+      "deleteNow": "Xóa ngay bây giờ"
+    }
+  }
+}

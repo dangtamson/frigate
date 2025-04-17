@@ -1,3 +1,77 @@
 {
-  "selectItem": "Chọn mục {{item}}"
+  "description": {
+    "addFace": "Hướng dẫn thêm một bộ sưu tập mới vào Thư viện khuôn mặt.",
+    "placeholder": "Nhập tên cho bộ sưu tập này"
+  },
+  "details": {
+    "person": "Người",
+    "confidence": "Độ tin cậy",
+    "face": "Chi tiết khuôn mặt",
+    "faceDesc": "Chi tiết về khuôn mặt và đối tượng liên quan",
+    "timestamp": "Dấu thời gian"
+  },
+  "documentTitle": "Thư viện khuôn mặt - Frigate",
+  "uploadFaceImage": {
+    "title": "Tải lên hình ảnh khuôn mặt",
+    "desc": "Tải lên một hình ảnh để quét khuôn mặt và thêm vào {{pageToggle}}"
+  },
+  "createFaceLibrary": {
+    "title": "Tạo bộ sưu tập",
+    "desc": "Tạo một bộ sưu tập mới",
+    "new": "Tạo khuôn mặt mới",
+    "nextSteps": "Để xây dựng nền tảng vững chắc:<li>Sử dụng tab Huấn luyện để chọn và huấn luyện trên các hình ảnh của từng người được phát hiện.</li><li>Tập trung vào các hình ảnh trực diện để có kết quả tốt nhất; tránh các hình ảnh huấn luyện chụp khuôn mặt ở góc nghiêng.</li></ul>"
+  },
+  "steps": {
+    "faceName": "Nhập tên khuôn mặt",
+    "uploadFace": "Tải lên hình ảnh khuôn mặt",
+    "nextSteps": "Các bước tiếp theo"
+  },
+  "train": {
+    "title": "Huấn luyện",
+    "aria": "Chọn huấn luyện"
+  },
+  "selectItem": "Chọn {{item}}",
+  "selectFace": "Chọn khuôn mặt",
+  "deleteFaceLibrary": {
+    "title": "Xóa tên",
+    "desc": "Bạn có chắc chắn muốn xóa bộ sưu tập {{name}}? Điều này sẽ xóa vĩnh viễn tất cả các khuôn mặt liên quan."
+  },
+  "button": {
+    "deleteFaceAttempts": "Xóa các lần thử khuôn mặt",
+    "addFace": "Thêm khuôn mặt",
+    "uploadImage": "Tải lên hình ảnh",
+    "reprocessFace": "Xử lý lại khuôn mặt"
+  },
+  "imageEntry": {
+    "validation": {
+      "selectImage": "Vui lòng chọn một tệp hình ảnh."
+    },
+    "dropActive": "Thả hình ảnh vào đây...",
+    "dropInstructions": "Kéo và thả hình ảnh vào đây, hoặc nhấp để chọn",
+    "maxSize": "Kích thước tối đa: {{size}}MB"
+  },
+  "readTheDocs": "Đọc tài liệu",
+  "trainFaceAs": "Huấn luyện khuôn mặt như:",
+  "trainFace": "Huấn luyện khuôn mặt",
+  "toast": {
+    "success": {
+      "uploadedImage": "Tải lên hình ảnh thành công.",
+      "addFaceLibrary": "{{name}} đã được thêm thành công vào Thư viện khuôn mặt!",
+      "deletedFace_one": "Đã xóa thành công {{count}} khuôn mặt.",
+      "deletedFace_other": "Đã xóa thành công {{count}} khuôn mặt.",
+      "deletedName_zero": "Bộ sưu tập trống đã được xóa thành công.",
+      "deletedName_one": "{{count}} khuôn mặt đã được xóa thành công.",
+      "deletedName_other": "{{count}} khuôn mặt đã được xóa thành công.",
+      "trainedFace": "Huấn luyện khuôn mặt thành công.",
+      "updatedFaceScore": "Cập nhật điểm khuôn mặt thành công."
+    },
+    "error": {
+      "uploadingImageFailed": "Tải lên hình ảnh thất bại: {{errorMessage}}",
+      "addFaceLibraryFailed": "Đặt tên khuôn mặt thất bại: {{errorMessage}}",
+      "deleteFaceFailed": "Xóa thất bại: {{errorMessage}}",
+      "deleteNameFailed": "Xóa tên thất bại: {{errorMessage}}",
+      "trainFailed": "Huấn luyện thất bại: {{errorMessage}}",
+      "updateFaceScoreFailed": "Cập nhật điểm khuôn mặt thất bại: {{errorMessage}}"
+    }
+  }
 }

@@ -1,1 +1,157 @@
-{}
+{
+  "documentTitle": {
+    "cameras": "Thống kê Camera - Frigate",
+    "storage": "Thống kê Lưu trữ - Frigate",
+    "general": "Thống kê Chung - Frigate",
+    "enrichments": "Thống kê Bổ sung - Frigate",
+    "logs": {
+      "frigate": "Nhật ký Frigate - Frigate",
+      "go2rtc": "Nhật ký Go2RTC - Frigate",
+      "nginx": "Nhật ký Nginx - Frigate"
+    }
+  },
+  "title": "Hệ thống",
+  "metrics": "Thông số hệ thống",
+  "logs": {
+    "download": {
+      "label": "Tải xuống Nhật ký"
+    },
+    "copy": {
+      "label": "Sao chép vào Clipboard",
+      "success": "Đã sao chép nhật ký vào clipboard",
+      "error": "Không thể sao chép nhật ký vào clipboard"
+    },
+    "type": {
+      "label": "Loại",
+      "timestamp": "Dấu thời gian",
+      "tag": "Thẻ",
+      "message": "Thông điệp"
+    },
+    "tips": "Nhật ký đang được truyền từ máy chủ",
+    "toast": {
+      "error": {
+        "fetchingLogsFailed": "Lỗi khi lấy nhật ký: {{errorMessage}}",
+        "whileStreamingLogs": "Lỗi khi truyền nhật ký: {{errorMessage}}"
+      }
+    }
+  },
+  "general": {
+    "title": "Chung",
+    "detector": {
+      "title": "Bộ phát hiện",
+      "inferenceSpeed": "Tốc độ Suy luận của Bộ phát hiện",
+      "cpuUsage": "Sử dụng CPU của Bộ phát hiện",
+      "memoryUsage": "Sử dụng Bộ nhớ của Bộ phát hiện"
+    },
+    "hardwareInfo": {
+      "title": "Thông tin Phần cứng",
+      "gpuUsage": "Sử dụng GPU",
+      "gpuMemory": "Bộ nhớ GPU",
+      "gpuEncoder": "Bộ mã hóa GPU",
+      "gpuDecoder": "Bộ giải mã GPU",
+      "gpuInfo": {
+        "vainfoOutput": {
+          "title": "Đầu ra Vainfo",
+          "returnCode": "Mã Trả về: {{code}}",
+          "processOutput": "Đầu ra Quá trình:",
+          "processError": "Lỗi Quá trình:"
+        },
+        "nvidiaSMIOutput": {
+          "title": "Đầu ra Nvidia SMI",
+          "name": "Tên: {{name}}",
+          "driver": "Trình điều khiển: {{driver}}",
+          "cudaComputerCapability": "Khả năng Tính toán CUDA: {{cuda_compute}}",
+          "vbios": "Thông tin VBios: {{vbios}}"
+        },
+        "closeInfo": {
+          "label": "Đóng thông tin GPU"
+        },
+        "copyInfo": {
+          "label": "Sao chép thông tin GPU"
+        },
+        "toast": {
+          "success": "Đã sao chép thông tin GPU vào clipboard"
+        }
+      }
+    },
+    "otherProcesses": {
+      "title": "Quá trình Khác",
+      "processCpuUsage": "Sử dụng CPU của Quá trình",
+      "processMemoryUsage": "Sử dụng Bộ nhớ của Quá trình"
+    }
+  },
+  "storage": {
+    "title": "Lưu trữ",
+    "overview": "Tổng quan",
+    "recordings": {
+      "title": "Bản ghi",
+      "tips": "Giá trị này đại diện cho tổng dung lượng lưu trữ được sử dụng bởi các bản ghi trong cơ sở dữ liệu của Frigate. Frigate không theo dõi việc sử dụng lưu trữ cho tất cả các tệp trên ổ đĩa của bạn.",
+      "earliestRecording": "Bản ghi sớm nhất có sẵn:"
+    },
+    "cameraStorage": {
+      "title": "Lưu trữ Camera",
+      "camera": "Camera",
+      "unusedStorageInformation": "Thông tin Lưu trữ Không sử dụng",
+      "storageUsed": "Lưu trữ",
+      "percentageOfTotalUsed": "Phần trăm Tổng số",
+      "bandwidth": "Băng thông",
+      "unused": {
+        "title": "Không sử dụng",
+        "tips": "Giá trị này có thể không chính xác đại diện cho không gian trống có sẵn cho Frigate nếu bạn có các tệp khác được lưu trữ trên ổ đĩa của mình ngoài các bản ghi của Frigate. Frigate không theo dõi việc sử dụng lưu trữ ngoài các bản ghi của nó."
+      }
+    }
+  },
+  "cameras": {
+    "title": "Camera",
+    "overview": "Tổng quan",
+    "info": {
+      "cameraProbeInfo": "Thông tin Thăm dò Camera {{camera}}",
+      "streamDataFromFFPROBE": "Dữ liệu luồng được lấy bằng <code>ffprobe</code>.",
+      "fetching": "Đang lấy Dữ liệu Camera",
+      "stream": "Luồng {{idx}}",
+      "video": "Video:",
+      "codec": "Codec:",
+      "resolution": "Độ phân giải:",
+      "fps": "FPS:",
+      "unknown": "Không xác định",
+      "audio": "Âm thanh:",
+      "error": "Lỗi: {{error}}",
+      "tips": {
+        "title": "Thông tin Thăm dò Camera"
+      }
+    },
+    "framesAndDetections": "Khung hình / Phát hiện",
+    "label": {
+      "camera": "camera",
+      "detect": "phát hiện",
+      "skipped": "bỏ qua",
+      "ffmpeg": "ffmpeg",
+      "capture": "chụp"
+    },
+    "toast": {
+      "success": {
+        "copyToClipboard": "Đã sao chép dữ liệu thăm dò vào clipboard."
+      },
+      "error": {
+        "unableToProbeCamera": "Không thể thăm dò camera: {{errorMessage}}"
+      }
+    }
+  },
+  "lastRefreshed": "Làm mới lần cuối: ",
+  "stats": {
+    "ffmpegHighCpuUsage": "{{camera}} có mức sử dụng CPU FFMPEG cao ({{ffmpegAvg}}%)",
+    "detectHighCpuUsage": "{{camera}} có mức sử dụng CPU phát hiện cao ({{detectAvg}}%)",
+    "healthy": "Hệ thống đang hoạt động tốt",
+    "reindexingEmbeddings": "Đang lập chỉ mục lại các nhúng ({{processed}}% hoàn thành)"
+  },
+  "enrichments": {
+    "title": "Bổ sung",
+    "infPerSecond": "Suy luận mỗi giây",
+    "embeddings": {
+      "image_embedding_speed": "Tốc độ Nhúng Hình ảnh",
+      "face_embedding_speed": "Tốc độ Nhúng Khuôn mặt",
+      "plate_recognition_speed": "Tốc độ Nhận diện Biển số",
+      "text_embedding_speed": "Tốc độ Nhúng Văn bản"
+    }
+  }
+}

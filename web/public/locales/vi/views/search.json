@@ -1,1 +1,67 @@
-{}
+{
+  "search": "Tìm kiếm",
+  "savedSearches": "Tìm kiếm đã lưu",
+  "searchFor": "Tìm kiếm cho {{inputValue}}",
+  "button": {
+    "clear": "Xóa tìm kiếm",
+    "save": "Lưu tìm kiếm",
+    "delete": "Xóa tìm kiếm đã lưu",
+    "filterInformation": "Thông tin bộ lọc",
+    "filterActive": "Bộ lọc đang hoạt động"
+  },
+  "trackedObjectId": "ID Đối tượng được theo dõi",
+  "filter": {
+    "label": {
+      "cameras": "Camera",
+      "labels": "Nhãn",
+      "zones": "Khu vực",
+      "sub_labels": "Nhãn phụ",
+      "search_type": "Loại tìm kiếm",
+      "time_range": "Khoảng thời gian",
+      "before": "Trước",
+      "after": "Sau",
+      "min_score": "Điểm tối thiểu",
+      "max_score": "Điểm tối đa",
+      "min_speed": "Tốc độ tối thiểu",
+      "max_speed": "Tốc độ tối đa",
+      "recognized_license_plate": "Biển số được nhận diện",
+      "has_clip": "Có clip",
+      "has_snapshot": "Có ảnh chụp"
+    },
+    "searchType": {
+      "thumbnail": "Hình thu nhỏ",
+      "description": "Mô tả"
+    },
+    "toast": {
+      "error": {
+        "beforeDateBeLaterAfter": "Ngày 'trước' phải muộn hơn ngày 'sau'.",
+        "afterDatebeEarlierBefore": "Ngày 'sau' phải sớm hơn ngày 'trước'.",
+        "minScoreMustBeLessOrEqualMaxScore": "'Điểm tối thiểu' phải nhỏ hơn hoặc bằng 'điểm tối đa'.",
+        "maxScoreMustBeGreaterOrEqualMinScore": "'Điểm tối đa' phải lớn hơn hoặc bằng 'điểm tối thiểu'.",
+        "minSpeedMustBeLessOrEqualMaxSpeed": "'Tốc độ tối thiểu' phải nhỏ hơn hoặc bằng 'tốc độ tối đa'.",
+        "maxSpeedMustBeGreaterOrEqualMinSpeed": "'Tốc độ tối đa' phải lớn hơn hoặc bằng 'tốc độ tối thiểu'."
+      }
+    },
+    "tips": {
+      "title": "Cách sử dụng bộ lọc văn bản",
+      "desc": {
+        "text": "Bộ lọc giúp bạn thu hẹp kết quả tìm kiếm. Đây là cách sử dụng chúng trong trường nhập liệu:",
+        "step": "<ul className=\"list-disc pl-5 text-sm text-primary-variant\"><li>Nhập tên bộ lọc theo sau là dấu hai chấm (ví dụ: \"cameras:\").</li><li>Chọn một giá trị từ gợi ý hoặc tự nhập giá trị của bạn.</li><li>Sử dụng nhiều bộ lọc bằng cách thêm chúng lần lượt với khoảng trắng giữa các bộ lọc.</li><li>Bộ lọc ngày (before: và after:) sử dụng định dạng <em>{{DateFormat}}</em>.</li><li>Bộ lọc khoảng thời gian sử dụng định dạng <em>{{exampleTime}}</em>.</li><li>Xóa bộ lọc bằng cách nhấn vào 'x' bên cạnh chúng.</li></ul>",
+        "example": "Ví dụ: <code className=\"text-primary\">cameras:front_door label:person before:01012024 time_range:3:00PM-4:00PM </code>"
+      }
+    },
+    "header": {
+      "currentFilterType": "Giá trị bộ lọc",
+      "noFilters": "Bộ lọc",
+      "activeFilters": "Bộ lọc đang hoạt động"
+    }
+  },
+  "similaritySearch": {
+    "title": "Tìm kiếm tương tự",
+    "active": "Tìm kiếm tương tự đang hoạt động",
+    "clear": "Xóa tìm kiếm tương tự"
+  },
+  "placeholder": {
+    "search": "Tìm kiếm..."
+  }
+}

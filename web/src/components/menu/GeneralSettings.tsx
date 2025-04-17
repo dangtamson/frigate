@@ -77,13 +77,14 @@ export default function GeneralSettings({ className }: GeneralSettingsProps) {
 
   const languages = [
     { code: "en", label: t("menu.language.en") },
-    { code: "es", label: t("menu.language.es") },
-    { code: "zh-CN", label: t("menu.language.zhCN") },
-    { code: "tr", label: t("menu.language.tr") },
-    { code: "nl", label: t("menu.language.nl") },
-    { code: "nb-NO", label: t("menu.language.nb") },
-    { code: "pl", label: t("menu.language.pl") },
-    { code: "ru", label: t("menu.language.ru") },
+    { code: "vi", label: t("menu.language.vi") },
+    // { code: "es", label: t("menu.language.es") },
+    // { code: "zh-CN", label: t("menu.language.zhCN") },
+    // { code: "tr", label: t("menu.language.tr") },
+    // { code: "nl", label: t("menu.language.nl") },
+    // { code: "nb-NO", label: t("menu.language.nb") },
+    // { code: "pl", label: t("menu.language.pl") },
+    // { code: "ru", label: t("menu.language.ru") },
   ];
 
   // settings
@@ -469,7 +470,7 @@ export default function GeneralSettings({ className }: GeneralSettingsProps) {
                 </SubItemContent>
               </Portal>
             </SubItem>
-            <DropdownMenuLabel className={isDesktop ? "mt-3" : "mt-1"}>
+            {/* <DropdownMenuLabel className={isDesktop ? "mt-3" : "mt-1"}>
               {t("menu.help")}
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
@@ -497,7 +498,7 @@ export default function GeneralSettings({ className }: GeneralSettingsProps) {
                 <LuGithub className="mr-2 size-4" />
                 <span>GitHub</span>
               </MenuItem>
-            </a>
+            </a> */}
             {isAdmin && (
               <>
                 <DropdownMenuSeparator
