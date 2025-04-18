@@ -15,18 +15,14 @@
         "desc": "Các đối tượng ở những vị trí bạn muốn tránh không phải là kết quả sai. Gửi chúng như kết quả sai sẽ làm mô hình bị nhầm lẫn."
       },
       "review": {
-        "true": {
+        "question": {
           "label": "Xác nhận nhãn này cho Frigate Plus",
-          "true_one": "Đây là {{label}}",
-          "true_other": "Đây là một {{label}}"
-        },
-        "false": {
-          "label": "Không xác nhận nhãn này cho Frigate Plus",
-          "false_one": "Đây không phải là {{label}}",
-          "false_other": "Đây không phải là một {{label}}"
+          "ask_a": "Đây có phải là một đối tượng <code>{{label}}</code> không?",
+          "ask_an": "Đây có phải là một đối tượng <code>{{label}}</code> không?",
+          "ask_full": "Đây có phải là một đối tượng <code>{{untranslatedLabel}}</code> ({{translatedLabel}}) không?"
         },
         "state": {
-          "submitted": "Đã gửi"
+          "submitted": "Gửi đi"
         }
       }
     },

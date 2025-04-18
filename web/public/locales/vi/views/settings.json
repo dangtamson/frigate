@@ -370,12 +370,12 @@
     "motion": {
       "title": "Hộp chuyển động",
       "desc": "Hiển thị các hộp xung quanh các khu vực nơi chuyển động được phát hiện",
-      "tips": "<p className=\"mb-2\"><strong>Hộp Chuyển động</strong></p><br><p>Các hộp màu đỏ sẽ được chồng lên các khu vực của khung hình nơi chuyển động hiện đang được phát hiện</p>"
+      "tips": "<p><strong>Hộp Chuyển động</strong></p><br><p>Các hộp màu đỏ sẽ được chồng lên các khu vực của khung hình nơi chuyển động hiện đang được phát hiện</p>"
     },
     "regions": {
       "title": "Vùng",
       "desc": "Hiển thị một hộp của vùng quan tâm được gửi đến bộ phát hiện đối tượng",
-      "tips": "<p className=\"mb-2\"><strong>Hộp Vùng</strong></p><br><p>Các hộp màu xanh lá sáng sẽ được chồng lên các khu vực quan tâm trong khung hình đang được gửi đến bộ phát hiện đối tượng.</p>"
+      "tips": "<p><strong>Hộp Vùng</strong></p><br><p>Các hộp màu xanh lá sáng sẽ được chồng lên các khu vực quan tâm trong khung hình đang được gửi đến bộ phát hiện đối tượng.</p>"
     },
     "objectShapeFilterDrawing": {
       "title": "Vẽ Bộ lọc Hình dạng Đối tượng",
