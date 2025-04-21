@@ -1,14 +1,14 @@
 {
   "documentTitle": {
-    "default": "Cài đặt - Frigate",
-    "authentication": "Cài đặt Xác thực - Frigate",
-    "camera": "Cài đặt Camera - Frigate",
-    "classification": "Cài đặt Phân loại - Frigate",
-    "masksAndZones": "Trình chỉnh sửa Mặt nạ và Vùng - Frigate",
-    "motionTuner": "Điều chỉnh Chuyển động - Frigate",
-    "object": "Cài đặt Đối tượng - Frigate",
-    "general": "Cài đặt Chung - Frigate",
-    "frigatePlus": "Cài đặt Frigate+ - Frigate"
+    "default": "Cài đặt - sCamera",
+    "authentication": "Cài đặt Xác thực - sCamera",
+    "camera": "Cài đặt Camera - sCamera",
+    "classification": "Cài đặt Phân loại - sCamera",
+    "masksAndZones": "Trình chỉnh sửa Mặt nạ và Vùng - sCamera",
+    "motionTuner": "Điều chỉnh Chuyển động - sCamera",
+    "object": "Cài đặt Đối tượng - sCamera",
+    "general": "Cài đặt Chung - sCamera",
+    "frigatePlus": "Cài đặt Frigate+ - sCamera"
   },
   "menu": {
     "ui": "Giao diện",
@@ -233,7 +233,7 @@
     },
     "zones": {
       "label": "Vùng",
-      "documentTitle": "Chỉnh sửa Vùng - Frigate",
+      "documentTitle": "Chỉnh sửa Vùng - sCamera",
       "desc": {
         "title": "Vùng cho phép bạn xác định một khu vực cụ thể trong khung hình để xác định liệu một đối tượng có nằm trong khu vực đó hay không.",
         "documentation": "Tài liệu"
@@ -281,7 +281,7 @@
     },
     "motionMasks": {
       "label": "Mặt nạ Chuyển động",
-      "documentTitle": "Chỉnh sửa Mặt nạ Chuyển động - Frigate",
+      "documentTitle": "Chỉnh sửa Mặt nạ Chuyển động - sCamera",
       "desc": {
         "title": "Mặt nạ chuyển động được sử dụng để ngăn các loại chuyển động không mong muốn kích hoạt phát hiện. Quá nhiều mặt nạ sẽ làm cho việc theo dõi đối tượng trở nên khó khăn hơn.",
         "documentation": "Tài liệu"
@@ -309,7 +309,7 @@
     },
     "objectMasks": {
       "label": "Mặt nạ Đối tượng",
-      "documentTitle": "Chỉnh sửa Mặt nạ Đối tượng - Frigate",
+      "documentTitle": "Chỉnh sửa Mặt nạ Đối tượng - sCamera",
       "desc": {
         "title": "Mặt nạ lọc đối tượng được sử dụng để lọc các kết quả dương tính giả cho một loại đối tượng nhất định dựa trên vị trí.",
         "documentation": "Tài liệu"

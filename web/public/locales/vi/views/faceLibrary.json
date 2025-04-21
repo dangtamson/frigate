@@ -10,7 +10,7 @@
     "faceDesc": "Chi tiết về khuôn mặt và đối tượng liên quan",
     "timestamp": "Dấu thời gian"
   },
-  "documentTitle": "Thư viện khuôn mặt - Frigate",
+  "documentTitle": "Thư viện khuôn mặt - sCamera",
   "uploadFaceImage": {
     "title": "Tải lên hình ảnh khuôn mặt",
     "desc": "Tải lên một hình ảnh để quét khuôn mặt và thêm vào {{pageToggle}}"

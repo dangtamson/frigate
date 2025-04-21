@@ -1,13 +1,13 @@
 {
   "documentTitle": {
-    "cameras": "Thống kê Camera - Frigate",
-    "storage": "Thống kê Lưu trữ - Frigate",
-    "general": "Thống kê Chung - Frigate",
-    "enrichments": "Thống kê Bổ sung - Frigate",
+    "cameras": "Thống kê Camera - sCamera",
+    "storage": "Thống kê Lưu trữ - sCamera",
+    "general": "Thống kê Chung - sCamera",
+    "enrichments": "Thống kê Bổ sung - sCamera",
     "logs": {
-      "frigate": "Nhật ký Frigate - Frigate",
-      "go2rtc": "Nhật ký Go2RTC - Frigate",
-      "nginx": "Nhật ký Nginx - Frigate"
+      "frigate": "Nhật ký Frigate - sCamera",
+      "go2rtc": "Nhật ký Go2RTC - sCamera",
+      "nginx": "Nhật ký Nginx - sCamera"
     }
   },
   "title": "Hệ thống",

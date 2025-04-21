@@ -18,9 +18,9 @@
     "aria": "Chọn sự kiện",
     "noFoundForTimePeriod": "Không tìm thấy sự kiện nào trong khoảng thời gian này."
   },
-  "documentTitle": "Xem lại - Frigate",
+  "documentTitle": "Xem lại - sCamera",
   "recordings": {
-    "documentTitle": "Bản ghi - Frigate"
+    "documentTitle": "Bản ghi - sCamera"
   },
   "calendarFilter": {
     "last24Hours": "24 giờ qua"
