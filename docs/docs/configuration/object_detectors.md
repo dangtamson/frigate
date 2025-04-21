@@ -659,7 +659,7 @@ YOLOv3, YOLOv4, YOLOv7, and [YOLOv9](https://github.com/WongKinYiu/yolov9) model
 
 :::tip
 
-The YOLO detector has been designed to support YOLOv3, YOLOv4, YOLOv7, and YOLOv9 models, but may support other YOLO model architectures as well.
+The YOLO detector has been designed to support YOLOv3, YOLOv4, YOLOv7, and YOLOv9 models, but may support other YOLO model architectures as well.  See [the models section](#downloading-yolo-models) for more information on downloading YOLO models for use in Frigate.
 
 :::
 
@@ -677,6 +677,29 @@ model:
   input_tensor: nchw
   input_dtype: float
   path: /config/model_cache/yolo.onnx
+  labelmap_path: /labelmap/coco-80.txt
+```
+
+Note that the labelmap uses a subset of the complete COCO label set that has only 80 objects.
+
+#### YOLOx
+
+[YOLOx](https://github.com/Megvii-BaseDetection/YOLOX) models are supported, but not included by default. See [the models section](#downloading-yolo-models) for more information on downloading the YOLOx model for use in Frigate.
+
+After placing the downloaded onnx model in your config folder, you can use the following configuration:
+
+```yaml
+detectors:
+  onnx:
+    type: onnx
+
+model:
+  model_type: yolox
+  width: 416 # <--- should match the imgsize set during model export
+  height: 416 # <--- should match the imgsize set during model export
+  input_tensor: nchw
+  input_dtype: float_denorm
+  path: /config/model_cache/yolox_tiny.onnx
   labelmap_path: /labelmap/coco-80.txt
 ```
 
@@ -792,62 +815,7 @@ This implementation uses the [Rockchip's RKNN-Toolkit2](https://github.com/airoc
 
 ### Prerequisites
 
-Make sure to follow the [Rockchip specific installation instrucitions](/frigate/installation#rockchip-platform).
-
-### Configuration
-
-This `config.yml` shows all relevant options to configure the detector and explains them. All values shown are the default values (except for two). Lines that are required at least to use the detector are labeled as required, all other lines are optional.
-
-```yaml
-detectors: # required
-  rknn: # required
-    type: rknn # required
-    # number of NPU cores to use
-    # 0 means choose automatically
-    # increase for better performance if you have a multicore NPU e.g. set to 3 on rk3588
-    num_cores: 0
-
-model: # required
-  # name of model (will be automatically downloaded) or path to your own .rknn model file
-  # possible values are:
-  # - deci-fp16-yolonas_s
-  # - deci-fp16-yolonas_m
-  # - deci-fp16-yolonas_l
-  # - /config/model_cache/your_custom_model.rknn
-  path: deci-fp16-yolonas_s
-  # width and height of detection frames
-  width: 320
-  height: 320
-  # pixel format of detection frame
-  # default value is rgb but yolo models usually use bgr format
-  input_pixel_format: bgr # required
-  # shape of detection frame
-  input_tensor: nhwc
-  # needs to be adjusted to model, see below
-  labelmap_path: /labelmap.txt # required
-```
-
-The correct labelmap must be loaded for each model. If you use a custom model (see notes below), you must make sure to provide the correct labelmap. The table below lists the correct paths for the bundled models:
-
-| `path`                | `labelmap_path`       |
-| --------------------- | --------------------- |
-| deci-fp16-yolonas\_\* | /labelmap/coco-80.txt |
-
-### Choosing a model
-
-:::warning
-
-The pre-trained YOLO-NAS weights from DeciAI are subject to their license and can't be used commercially. For more information, see: https://docs.deci.ai/super-gradients/latest/LICENSE.YOLONAS.html
-
-:::
-
-The inference time was determined on a rk3588 with 3 NPU cores.
-
-| Model               | Size in mb | Inference time in ms |
-| ------------------- | ---------- | -------------------- |
-| deci-fp16-yolonas_s | 24         | 25                   |
-| deci-fp16-yolonas_m | 62         | 35                   |
-| deci-fp16-yolonas_l | 81         | 45                   |
+Make sure to follow the [Rockchip specific installation instructions](/frigate/installation#rockchip-platform).
 
 :::tip
 
@@ -860,8 +828,93 @@ $ cat /sys/kernel/debug/rknpu/load
 
 :::
 
+### Supported Models
+
+This `config.yml` shows all relevant options to configure the detector and explains them. All values shown are the default values (except for two). Lines that are required at least to use the detector are labeled as required, all other lines are optional.
+
+```yaml
+detectors: # required
+  rknn: # required
+    type: rknn # required
+    # number of NPU cores to use
+    # 0 means choose automatically
+    # increase for better performance if you have a multicore NPU e.g. set to 3 on rk3588
+    num_cores: 0
+```
+
+The inference time was determined on a rk3588 with 3 NPU cores.
+
+| Model               | Size in mb | Inference time in ms |
+| ------------------- | ---------- | -------------------- |
+| deci-fp16-yolonas_s | 24         | 25                   |
+| deci-fp16-yolonas_m | 62         | 35                   |
+| deci-fp16-yolonas_l | 81         | 45                   |
+| yolov9_tiny         | 8          | 35                   |
+| yolox_nano          | 3          | 16                   |
+| yolox_tiny          | 6          | 20                   |
+
 - All models are automatically downloaded and stored in the folder `config/model_cache/rknn_cache`. After upgrading Frigate, you should remove older models to free up space.
 - You can also provide your own `.rknn` model. You should not save your own models in the `rknn_cache` folder, store them directly in the `model_cache` folder or another subfolder. To convert a model to `.rknn` format see the `rknn-toolkit2` (requires a x86 machine). Note, that there is only post-processing for the supported models.
+
+#### YOLO-NAS
+
+```yaml
+model: # required
+  # name of model (will be automatically downloaded) or path to your own .rknn model file
+  # possible values are:
+  # - deci-fp16-yolonas_s
+  # - deci-fp16-yolonas_m
+  # - deci-fp16-yolonas_l
+  # your yolonas_model.rknn
+  path: deci-fp16-yolonas_s
+  model_type: yolonas
+  width: 320
+  height: 320
+  input_pixel_format: bgr
+  input_tensor: nhwc
+  labelmap_path: /labelmap/coco-80.txt
+```
+
+:::warning
+
+The pre-trained YOLO-NAS weights from DeciAI are subject to their license and can't be used commercially. For more information, see: https://docs.deci.ai/super-gradients/latest/LICENSE.YOLONAS.html
+
+:::
+
+#### YOLO (v9)
+
+```yaml
+model: # required
+  # name of model (will be automatically downloaded) or path to your own .rknn model file
+  # possible values are:
+  # - yolov9-t
+  # - yolov9-s
+  # your yolo_model.rknn
+  path: /config/model_cache/rknn_cache/yolov9-t.rknn
+  model_type: yolo-generic
+  width: 320
+  height: 320
+  input_tensor: nhwc
+  input_dtype: float
+  labelmap_path: /labelmap/coco-80.txt
+```
+
+#### YOLOx
+
+```yaml
+model: # required
+  # name of model (will be automatically downloaded) or path to your own .rknn model file
+  # possible values are:
+  # - yolox_nano
+  # - yolox_tiny
+  # your yolox_model.rknn
+  path: yolox_tiny
+  model_type: yolox
+  width: 416
+  height: 416
+  input_tensor: nhwc
+  labelmap_path: /labelmap/coco-80.txt
+```
 
 ### Converting your own onnx model to rknn format
 
@@ -882,7 +935,7 @@ output_name: "{input_basename}"
 config:
   mean_values: [[0, 0, 0]]
   std_values: [[255, 255, 255]]
-  quant_img_rgb2bgr: true
+  quant_img_RGB2BGR: true
 ```
 
 Explanation of the paramters:
@@ -961,6 +1014,10 @@ The pre-trained YOLO-NAS weights from DeciAI are subject to their license and ca
 The input image size in this notebook is set to 320x320. This results in lower CPU usage and faster inference times without impacting performance in most cases due to the way Frigate crops video frames to areas of interest before running detection. The notebook and config can be updated to 640x640 if desired.
 
 ### Downloading YOLO Models
+
+#### YOLOx
+
+YOLOx models can be downloaded [from the YOLOx repo](https://github.com/Megvii-BaseDetection/YOLOX/tree/main/demo/ONNXRuntime).
 
 #### YOLOv3, YOLOv4, and YOLOv7
 

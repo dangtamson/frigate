@@ -474,7 +474,7 @@
       "deleteUser": {
         "title": "Delete User",
         "desc": "This action cannot be undone. This will permanently delete the user account and remove all associated data.",
-        "warn": "Are you sure you want to delete"
+        "warn": "Are you sure you want to delete <strong>{{username}}</strong>?"
       },
       "passwordSetting": {
         "updatePassword": "Update Password for {{username}}",
@@ -483,7 +483,7 @@
       },
       "changeRole": {
         "title": "Change User Role",
-        "desc": "Update permissions for",
+        "desc": "Update permissions for <strong>{{username}}</strong>",
         "roleInfo": {
           "intro": "Select the appropriate role for this user:",
           "admin": "Admin",
@@ -571,8 +571,11 @@
       "modelType": "Model Type",
       "trainDate": "Train Date",
       "baseModel": "Base Model",
+      "plusModelType": {
+        "baseModel": "Base Model",
+        "userModel": "Fine-Tuned"
+      },
       "supportedDetectors": "Supported Detectors",
-      "dimensions": "Dimensions",
       "cameras": "Cameras",
       "loading": "Loading model information...",
       "error": "Failed to load model information",
