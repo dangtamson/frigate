@@ -231,7 +231,7 @@ export default function SearchDetailDialog({
                   {item == "object_lifecycle" && (
                     <FaRotate className="size-4" />
                   )}
-                  <div className="capitalize">{t(`type.${item}`)}</div>
+                  <div className="smart-capitalize">{t(`type.${item}`)}</div>
                 </ToggleGroupItem>
               ))}
             </ToggleGroup>
@@ -320,8 +320,12 @@ function ObjectDetailsTab({
   const formattedDate = useFormattedTimestamp(
     search?.start_time ?? 0,
     config?.ui.time_format == "24hour"
-      ? t("time.formattedTimestampWithYear.24hour", { ns: "common" })
-      : t("time.formattedTimestampWithYear.12hour", { ns: "common" }),
+      ? t("time.formattedTimestampMonthDayYearHourMinute.24hour", {
+          ns: "common",
+        })
+      : t("time.formattedTimestampMonthDayYearHourMinute.12hour", {
+          ns: "common",
+        }),
     config?.ui.timezone,
   );
 
@@ -707,7 +711,7 @@ function ObjectDetailsTab({
         <div className="flex w-full flex-col gap-3">
           <div className="flex flex-col gap-1.5">
             <div className="text-sm text-primary/40">{t("details.label")}</div>
-            <div className="flex flex-row items-center gap-2 text-sm capitalize">
+            <div className="flex flex-row items-center gap-2 text-sm smart-capitalize">
               {getIconForLabel(search.label, "size-4 text-primary")}
               {t(search.label, {
                 ns: "objects",
@@ -788,7 +792,7 @@ function ObjectDetailsTab({
               {topScore}%{subLabelScore && ` (${subLabelScore}%)`}
             </div>
           </div>
-          {snapScore && (
+          {snapScore != undefined && (
             <div className="flex flex-col gap-1.5">
               <div className="text-sm text-primary/40">
                 <div className="flex flex-row items-center gap-1">
@@ -827,7 +831,7 @@ function ObjectDetailsTab({
           )}
           <div className="flex flex-col gap-1.5">
             <div className="text-sm text-primary/40">{t("details.camera")}</div>
-            <div className="text-sm capitalize">
+            <div className="text-sm smart-capitalize">
               {search.camera.replaceAll("_", " ")}
             </div>
           </div>

@@ -572,13 +572,13 @@ export default function ObjectLifecycle({
                         </div>
                       </div>
                       <div className="mx-3 text-lg">
-                        <div className="flex flex-row items-center capitalize text-primary">
+                        <div className="flex flex-row items-center text-primary smart-capitalize">
                           {getLifecycleItemDescription(item)}
                         </div>
                         <div className="text-sm text-primary-variant">
                           {formatUnixTimestampToDateTime(item.timestamp, {
                             timezone: config.ui.timezone,
-                            strftime_fmt:
+                            date_format:
                               config.ui.time_format == "24hour"
                                 ? t("time.formattedTimestamp2.24hour", {
                                     ns: "common",
@@ -616,7 +616,7 @@ export default function ObjectLifecycle({
                                   )}
                                   <div
                                     key={index}
-                                    className="cursor-pointer capitalize"
+                                    className="cursor-pointer smart-capitalize"
                                     onClick={() => setSelectedZone(zone)}
                                   >
                                     {zone.replaceAll("_", " ")}
@@ -722,7 +722,7 @@ export default function ObjectLifecycle({
                           />
                         </TooltipTrigger>
                         <TooltipPortal>
-                          <TooltipContent className="capitalize">
+                          <TooltipContent className="smart-capitalize">
                             {getLifecycleItemDescription(item)}
                           </TooltipContent>
                         </TooltipPortal>
