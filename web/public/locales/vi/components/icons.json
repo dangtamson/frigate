@@ -1,8 +1,8 @@
 {
   "iconPicker": {
-    "selectIcon": "Chọn icon",
+    "selectIcon": "Chọn một biểu tượng",
     "search": {
-      "placeholder": "Nhập để tìm kiếm icon..."
+      "placeholder": "Tìm kiếm một biểu tượng…"
     }
   }
 }

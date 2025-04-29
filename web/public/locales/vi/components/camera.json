@@ -1,83 +1,12 @@
 {
   "group": {
-    "label": "Nhóm Camera",
-    "add": "Thêm Nhóm Camera",
-    "edit": "Chỉnh sửa Nhóm Camera",
     "delete": {
-      "label": "Xóa Nhóm Camera",
+      "label": "Xóa nhóm camera",
       "confirm": {
-        "title": "Xác nhận Xóa",
-        "desc": "Bạn có chắc chắn muốn xóa nhóm camera <em>{{name}}</em>?"
+        "title": "Xác nhận xóa"
       }
     },
-    "name": {
-      "label": "Tên",
-      "placeholder": "Nhập tên...",
-      "errorMessage": {
-        "mustLeastCharacters": "Tên nhóm camera phải có ít nhất 2 ký tự.",
-        "exists": "Tên nhóm camera đã tồn tại.",
-        "nameMustNotPeriod": "Tên nhóm camera không được chứa dấu chấm.",
-        "invalid": "Tên nhóm camera không hợp lệ."
-      }
-    },
-    "cameras": {
-      "label": "Cameras",
-      "desc": "Chọn camera cho nhóm này."
-    },
-    "icon": "Biểu tượng",
-    "success": "Nhóm camera ({{name}}) đã được lưu.",
-    "camera": {
-      "setting": {
-        "label": "Cài đặt Truyền phát Camera",
-        "title": "Cài đặt Truyền phát {{cameraName}}",
-        "desc": "Thay đổi các tùy chọn truyền phát trực tiếp cho bảng điều khiển của nhóm camera này. <em>Các cài đặt này là dành riêng cho thiết bị/trình duyệt.</em>",
-        "audioIsAvailable": "Âm thanh có sẵn cho luồng này",
-        "audioIsUnavailable": "Âm thanh không có sẵn cho luồng này",
-        "audio": {
-          "tips": {
-            "title": "Âm thanh phải được xuất từ camera của bạn và được cấu hình trong go2rtc cho luồng này.",
-            "document": "Đọc tài liệu "
-          }
-        },
-        "streamMethod": {
-          "label": "Phương pháp Truyền phát",
-          "method": {
-            "noStreaming": {
-              "label": "Không Truyền phát",
-              "desc": "Hình ảnh camera sẽ chỉ cập nhật mỗi phút một lần và không có truyền phát trực tiếp."
-            },
-            "smartStreaming": {
-              "label": "Truyền phát Thông minh (khuyến nghị)",
-              "desc": "Truyền phát thông minh sẽ cập nhật hình ảnh camera của bạn mỗi phút một lần khi không có hoạt động nào được phát hiện để tiết kiệm băng thông và tài nguyên. Khi phát hiện hoạt động, hình ảnh sẽ chuyển đổi liền mạch sang luồng trực tiếp."
-            },
-            "continuousStreaming": {
-              "label": "Truyền phát Liên tục",
-              "desc": {
-                "title": "Hình ảnh camera sẽ luôn là luồng trực tiếp khi hiển thị trên bảng điều khiển, ngay cả khi không có hoạt động nào được phát hiện.",
-                "warning": "Truyền phát liên tục có thể gây ra việc sử dụng băng thông cao và các vấn đề về hiệu suất. Hãy sử dụng cẩn thận."
-              }
-            }
-          }
-        },
-        "compatibilityMode": {
-          "label": "Chế độ Tương thích",
-          "desc": "Chỉ bật tùy chọn này nếu luồng trực tiếp của camera của bạn hiển thị các hiện tượng màu sắc bất thường và có một đường chéo ở phía bên phải của hình ảnh."
-        }
-      }
-    }
-  },
-  "debug": {
-    "options": {
-      "label": "Cài đặt",
-      "title": "Tùy chọn",
-      "showOptions": "Hiển thị Tùy chọn",
-      "hideOptions": "Ẩn Tùy chọn"
-    },
-    "boundingBox": "Hộp Bao",
-    "timestamp": "Dấu thời gian",
-    "zones": "Khu vực",
-    "mask": "Mặt nạ",
-    "motion": "Chuyển động",
-    "regions": "Vùng"
+    "label": "Các nhóm Camera",
+    "add": "Thêm nhóm Camera"
   }
 }

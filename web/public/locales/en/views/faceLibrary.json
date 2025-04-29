@@ -52,7 +52,7 @@
     "validation": {
       "selectImage": "Please select an image file."
     },
-    "dropActive": "Drop the image here...",
+    "dropActive": "Drop the image here…",
     "dropInstructions": "Drag and drop an image here, or click to select",
     "maxSize": "Max size: {{size}}MB"
   },
